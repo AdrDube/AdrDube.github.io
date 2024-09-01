@@ -65,10 +65,16 @@
         }
 
         .carousel-item img {
-            object-fit: cover;
-            height: 100%;
+            object-fit: contain;
+            height: auto;
             width: 100%;
             opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px; /* Adjust the height as needed for mobile screens */
+            }
         }
 
         .carousel-caption {
