@@ -54,25 +54,24 @@
     </style>
 
 
-    <!--Optional: Adjust the height of the carousel -->
+    <!--Adjust the height of the carousel -->
     <style>
 
         .carousel-item {
-            height: 90vh;
             background-color: #000000;
             color: white;
             position: relative;
         }
         .carousel-item img {
             width: 100%;  /* Ensures the image takes up 100% of the parent container's width */
-            height: 100vh; /* Makes the image height equal to the viewport height */
+            height: 90vh; /* Makes the image height equal to the viewport height */
             object-fit: cover; /* Ensures the image covers the entire container */
         }
 
         @media (max-width: 768px) {
             .carousel-item img {
-                height: 50vh;
-                object-fit: contain;
+                height: 40vh;
+                object-fit: cover;
             }
         }
 
