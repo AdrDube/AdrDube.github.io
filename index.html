@@ -63,19 +63,19 @@
             color: white;
             position: relative;
         }
-
         .carousel-item img {
-            object-fit: contain;
-            height: auto;
-            width: 100%;
-            opacity: 0.8;
+            width: 100%;  /* Ensures the image takes up 100% of the parent container's width */
+            height: 100vh; /* Makes the image height equal to the viewport height */
+            object-fit: cover; /* Ensures the image covers the entire container */
         }
 
         @media (max-width: 768px) {
             .carousel-item img {
-                height: 300px; /* Adjust the height as needed for mobile screens */
+                height: 50vh;
+                object-fit: contain;
             }
         }
+
 
         .carousel-caption {
             position: absolute;
