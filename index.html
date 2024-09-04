@@ -160,9 +160,15 @@
         .background {
             background-image: url(Website/B.png);
             color: #fff;          
-            min-height: 20vh;      
+            min-height: 25vh;      
             margin-bottom: 0; 
             }
+        @media (max-width: 768px) {
+        .background {
+            max-height: 15vh;
+            object-fit: cover;
+            }
+        }
     </style>
     <style>
         /* Target the icons and increase their size */
@@ -255,11 +261,20 @@
                 </div>
                 <!-- Text Section -->
                 <div class="col-md-6">
-                    <h2 class="mb-4">About Me:</h2>
-                    <p>Hello World!!!! My name is Adriel Dube, and I am a freshman at Grambling State University. I am an international student who is studying computer science. I am intrigued by all facets of the digital age, and I would like to delve deeper into the field.</p>
-                    <p>Most of my time is spent staring at a computer screen. I thrive on responsibility and high stake situations. By day, I am an avid programmer who focuses on improving my skills and collaborating with others on projects. By night, I take my time to build my projects, attend hackathons, and attempt some challenging questions on HackerRank. I also delve further into various topics I am passionate about by using sites such as Coursera, FreeCodeCamp, and eDX, along with other sources of information..</p>
-                    <p>Throughout my academic and professional experiences, I have cultivated a robust skill set in object-oriented programming, data extraction, and file manipulation. The phrase ‘coding meets application’ is not just for show. My technical background is complemented by hands-on experience in various projects, ranging from international banking initiatives to web extraction programs and developing an online automated class registration process for my university. These experiences have honed my critical thinking abilities and reinforced my commitment to leveraging technology to drive meaningful outcomes.</p>
-                    <p>I'm always excited to learn and take on new challenges that help me grow both personally and professionally. If you’re interested in collaborating or just want to say hi, feel free to reach out!!!</p>
+                    <h2 class="text-center mb-5"></h2>
+                    <h2 class="mb-4">Hello World!</h2>
+                    <p style="font-size: larger;"> My name is Adriel Dube, and I am a freshman at Grambling State University. 
+                        I am an international student who is studying computer science. 
+                        I am intrigued by all facets of the digital age, and I would like to delve deeper into the field.</p>
+                    <p style="font-size: larger;"> The phrase ‘coding meets application’ is not just for show.
+                        By day, I am an avid programmer who focuses on improving my skills and collaborating with others on projects. 
+                        By night, I take my time to build my projects, attend hackathons, and attempt some challenging questions on HackerRank.</p>
+                    <p style="font-size: larger;"> My greatest weapon is the aquisition of transferable problem-solving skills. 
+                        My strong background in computer science theory has allowed to implement ideas in Python, HTML, CSS, C++, and JavaScript.
+                        I'm always excited to learn and take on new challenges
+                        </p>
+                    <p style="font-size: larger;">
+                        If you’re interested in collaborating or just want to say hi, feel free to reach out!!!</p>
                 </div>
             </div>
         </div>
@@ -267,6 +282,7 @@
     <!-- Projects Section -->
     <section id="projects" class="py-5" >
         <div class="container" style="padding-bottom: 50px;">
+            <h2 class="text-center mb-5"></h2>
             <h2 class="text-center mb-5">Some of my work:</h2>
             <div class="row">
                 <!-- Project 1 -->
@@ -330,6 +346,7 @@
     <!-- Logos Section -->
     <section id="skills">
         <div class="logo-container" style="padding-bottom: 50px;">
+            <h2 class="text-center mb-5"></h2>
             <h2 class="text-center mb-5">Skills and Abilities:</h2>
             <div class="row">
                 <!-- Logo 1 -->
@@ -380,9 +397,10 @@
     </section>
     <!-- End Section -->
     <section id="contact-me p-0" class="py-5 background " style=" height: auto;">
-        <div class="container-fluid p-0" style="height: 100px">
+        <div class="container-fluid p-0" >
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-6 text-white">
+                    
                     <h5>Contact Me</h5>
                     <!-- Social Media Icons -->
                     <div class="social-icons">
